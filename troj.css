@@ -1,0 +1,245 @@
+.tex {font-family: Pribambas;
+	position:relative;
+	display: block;
+margin-left: auto;
+margin-right: auto;
+	font-size:95pt;
+}
+.slides {
+	margin: 0 auto;
+left:230px;
+    height:400px;
+    overflow:hidden;
+    position:relative;
+    width:90%;
+	
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+	margin:0
+}
+.slides ul li {border-radius: 25px;
+    top:0;
+	width:70%; 
+    height:400px;
+	background-size:cover;
+	opacity:0;
+    position:absolute;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+
+
+    animation-name: anim_slides;
+    animation-duration: 20.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes anim_slides {
+    0% {
+        opacity:0;
+        visibility: visible;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+        visibility: hidden;
+    }
+    100% {
+        opacity:0;
+        visibility: hidden;
+    }
+}
+
+
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    animation-delay: 10.0s;
+}
+
+
+.sinner {border-radius: 25px; right:10%; margin-left:50px;  padding:20px 20px 50px; width:150%; max-width:600px; background:rgba(255,255,255,.7); position:relative; overflow:hidden; 
+    animation-name: anim_titles;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+
+}
+.sinner a { right:10px; bottom:10px; padding:10px; color:#fff ; background: rgba(90,206,231,.7); display:inline-block; text-decoration:none; position:absolute}
+.stext { margin:1% 0;
+font-family: Clear Sans Medium;
+font-size:14pt;}
+.stitle { font-size:25pt;
+font-family: Pribambas;
+}
+
+.s1 { background:#7B68EE}
+.s2 { background:#9370DB}
+
+
+.p {font-family: Pribambas;
+	font-size: 65pt;
+	display: block;
+margin-left: auto;
+margin-right: auto;}
+
+.tix{font-family: Tough Sans, static;
+background:#87CEEB;
+color:#fffff;
+padding: 10px;
+border-radius: 25px;
+font-size: 25pt;
+padding:3%;
+margin-left:15%;
+margin-right:15%;
+text-align:justify;
+}
+#header {
+	background:#87CEEB;
+	color:#fffff;
+	padding: 10px;
+	border-radius: 0 0 25px 25px;
+}
+
+@font-face {
+font-family: Clear Sans Medium;
+src: url(fonts/tox.ttf);
+}
+@font-face {
+font-family: Tough Sans;
+src: url(fonts/tex.otf);
+}
+@font-face {
+font-family: Pribambas;
+src: url(fonts/tix.ttf);
+}
+
+.pik{position: relative;
+width:250px;
+height:250px;
+display: block;
+float:left;
+margin: 15px 0 0 0;
+top:30px;
+left: 30px
+}
+
+.pic {position: relative;
+width:60%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background: radial-gradient(transparent, transparent 4px, black 4px,black);
+padding: 10px;
+background-size: 20px 20px;
+background-position: -10px -10px; 
+margin: 0 auto;
+}
+
+a:link{
+	color:#4682B4	;
+	text-decoration:none;
+}
+a:visited{
+	color:#4682B4;
+}
+#footer{
+	padding:1%;
+font-family: Pribambas;
+margin-top:3% ;
+text-align:justify;
+
+background-color:#000000;
+}
+ 
+.vt:hover{color:#808080;
+}
+body{ width:100%;
+height:100%;
+background: #fffff;
+margin:0;
+text-align:justify;
+	
+  
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+.tmenu { position: relative;
+font-size: 20pt;
+
+  
+  
+}
+.tmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.tmenu > li > a {
+	font-size:35pt;
+  font-family: Pribambas;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 40px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+.d:after {
+  content: "\f107";
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+
+.bmenu:hover{
+  text-decoration:none;
+}
+.tmenu li a:hover { color: #696969	; }
+.bmenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 300px;
+  transform: perspective(600px) ;
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.tmenu > li:hover 
+.bmenu{
+  visibility: visible;
+  opacity:1 ;
+  transform: perspective(600px) rotateX(0deg);
+}
+.bmenu li a {
+  color: #7f7f7f;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: ;
+}

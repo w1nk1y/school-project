@@ -1,0 +1,27 @@
+User-agent: Yandex
+Allow: /site
+Allow: *.css
+Allow: *.html
+Allow: /site/fonts
+Allow: /img
+
+User-agent: Googlebot
+Allow: /site
+Allow: *.css
+Allow: *.html
+Allow: /site/fonts
+Allow: /img
+
+User-agent: YandexBot
+Allow: /site
+Allow: *.css
+Allow: *.html
+Allow: /site/fonts
+Allow: /img
+
+User-agent: Googlebot-Image
+Allow:/site
+Allow: *.css
+Allow: *.html
+Allow: /site/fonts
+Allow: /img
